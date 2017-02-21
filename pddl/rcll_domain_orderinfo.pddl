@@ -1,32 +1,36 @@
 (define (domain RCLL)
-    (:requirements :typing :durative-actions)
+    (:requirements :typing)
     (:types
-      Order - object
-      OrderComplexityValue - object
-      Color - object
+      order - object
+      ordercomplexityvalue - object
+      color - object
+      gate - object
     )
     (:constants
-	RING_BLUE RING_GREEN RING_ORANGE RING_YELLOW BASE_RED BASE_BLACK BASE_SILVER CAP_BLACK CAP_GREY - Color
-	c0 c1 c2 c3 - OrderComplexity
+	RING_BLUE RING_GREEN RING_ORANGE RING_YELLOW BASE_RED BASE_BLACK BASE_SILVER CAP_BLACK CAP_GREY - color
+	c0 c1 c2 c3 - ordercomplexityvalue
+    )
+    (:functions
+      (orderDeliveryBegin ?ord - order)
+      (orderDeliveryEnd ?ord - order)
     )
     (:predicates   	
-      (orderComplexity ?ord - Order ?com - OrderComplexityValue)
-      (orderBaseColor ?ord - Order ?col - Color)
-      (orderRing1Color ?ord - Order ?col - Color)
-      (orderRing2Color ?ord - Order ?col - Color)
-      (orderRing3Color ?ord - Order ?col - Color)
-      (orderCapColor ?ord - Order ?col - Color)
-      (orderFilled ?ord - Order)
+      (orderComplexity ?ord - order ?com - ordercomplexityvalue)
+      (orderBaseColor ?ord - order ?col - color)
+      (orderRing1Color ?ord - order ?col - color)
+      (orderRing2Color ?ord - order ?col - color)
+      (orderRing3Color ?ord - order ?col - color)
+      (orderCapColor ?ord - order ?col - color)
+      (orderGate ?ord - order ?gat - gate)
+      (orderFilled ?ord - order)
     )
     (:action fillOrder
-     :parameters (?ord - Order)
-     :predcondition 
-       (and
-       )
+     :parameters (?ord - order)
+     :precondition 
+       (and )
      :effect
        (and 
 		(orderFilled ?ord)
 	)
     )
-
-
+)

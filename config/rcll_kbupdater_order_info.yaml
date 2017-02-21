@@ -5,19 +5,20 @@
 # == Type of Order Instances ==
 order_instance_type: order
 
-order_complexity_predicate: orderComplexity
-order_base_color_predicate: orderBaseColor
-order_ring1_color_predicate: orderRing1Color
-order_ring2_color_predicate: orderRing2Color
-order_ring3_color_predicate: orderRing3Color
-order_cap_color_predicate: orderCapColor
-order_delivery_gate_predicate: orderGate
-order_delivery_period_begin_predicate: orderDeliveryBegin
-order_delivery_period_end_predicate: orderDeliveryEnd
+order_complexity_predicate: ordercomplexity
+order_base_color_predicate: orderbasecolor
+order_ring1_color_predicate: orderring1color
+order_ring2_color_predicate: orderring2color
+order_ring3_color_predicate: orderring3color
+order_cap_color_predicate: ordercapcolor
+order_delivery_gate_predicate: ordergate
+order_delivery_period_begin_predicate: orderdeliverybegin
+order_delivery_period_end_predicate: orderdeliveryend
 
 order_id_argument: ord
 order_complexity_argument: com
 order_color_argument: col
+order_gate_argument: gat
 
 # Value mapping for colors
 

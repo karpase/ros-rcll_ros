@@ -1,7 +1,7 @@
 #!/bin/bash
 
 source $(dirname $(realpath $0))/rosplan_functions.sh
-INSTANCES="RING_BLUE:Color RING_GREEN:Color RING_ORANGE:Color RING_YELLOW:Color BASE_RED:Color BASE_BLACK:Color BASE_SILVER:Color CAP_BLACK:Color CAP_GREY:Color c0:OrderComplexity c1:OrderComplexity c2:OrderComplexity c3:OrderComplexity"
+INSTANCES="RING_BLUE:color RING_GREEN:color RING_ORANGE:color RING_YELLOW:color BASE_RED:color BASE_BLACK:color BASE_SILVER:color CAP_BLACK:color CAP_GREY:color c0:ordercomplexityvalue c1:ordercomplexityvalue c2:ordercomplexityvalue c3:ordercomplexityvalue g0:gate g1:gate g2:gate g3:gate"
 FACTS=""
 GOALS=""
 
