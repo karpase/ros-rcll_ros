@@ -20,6 +20,10 @@ order_complexity_argument: com
 order_color_argument: col
 order_gate_argument: gat
 
+order_object_prefix: o
+gate_object_prefix: GATE-
+order_complexity_object_prefix: c
+
 # Value mapping for colors
 
 rs_ring_value_blue: RING_BLUE
